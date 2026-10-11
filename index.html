@@ -370,13 +370,17 @@
   .next-in .arrow{ margin-top:10px; }
   .next-in:hover .arrow{ gap:20px; border-color:var(--fg); }
 
-  /* ---------- invita ---------- */
-  .invita{ background:var(--bg); }
-  .invita-inner{ text-align:center; display:flex; flex-direction:column; align-items:center; gap:22px; padding-block:64px; }
-  @media (min-width:768px){ .invita-inner{ padding-block:84px; } }
-  .invita .eyebrow{ margin:0; }
-  .invita-h{ max-width:22ch; margin:0; }
-  .invita-p{ font-size:12.5px; line-height:1.65; color:var(--muted); max-width:50ch; margin:2px 0 4px; }
+  /* ---------- invita (banda CTA con foto de fondo) ---------- */
+  .invita{ position:relative; isolation:isolate; overflow:hidden; background:#3a352f; }
+  .invita::before{ content:""; position:absolute; inset:0; z-index:-2; background:url('https://www.rolscarpets.com/wp-content/uploads/2025/11/foto-ambiente-aral-3-scaled.webp') center 58%/cover no-repeat; }
+  .invita::after{ content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(180deg, rgba(34,30,26,.72), rgba(34,30,26,.78)); }
+  .invita-inner{ text-align:center; display:flex; flex-direction:column; align-items:center; gap:22px; padding-block:84px; color:#fff; }
+  @media (min-width:768px){ .invita-inner{ padding-block:104px; } }
+  .invita .eyebrow{ margin:0; color:rgba(255,255,255,.72); }
+  .invita-h{ max-width:22ch; margin:0; color:#fff; }
+  .invita-p{ font-size:12.5px; line-height:1.65; color:rgba(255,255,255,.82); max-width:50ch; margin:2px 0 4px; }
+  .invita .arrow{ color:#fff; border-bottom-color:rgba(255,255,255,.55); }
+  .invita .arrow:hover{ border-bottom-color:#fff; }
 
   /* ---------- alfombras recicladas (foto a sangre) ---------- */
   .arrow.onDark{ border-bottom-color:rgba(255,255,255,.5); color:#fff; }
