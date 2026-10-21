@@ -425,18 +425,18 @@
   @media (min-width:768px){ .bcorp-band .bcorp{ height:108px; } }
 
   /* ---------- dónde comprar: hero + tarjetas ---------- */
-  .heroC{ display:flex; flex-direction:column; align-items:flex-start; gap:14px; padding-block:34px 6px; max-width:62ch; }
+  .heroC{ display:flex; flex-direction:column; align-items:flex-start; gap:14px; padding-block:34px 6px; max-width:none; }
   @media (min-width:768px){ .heroC{ padding-block:40px 6px; gap:16px; } }
-  .heroC .lead{ max-width:56ch; }
+  .heroC .lead{ max-width:88ch; }
   .ways{ display:grid; grid-template-columns:minmax(0,1fr); gap:28px 22px; margin-top:22px; }
   @media (min-width:768px){ .ways{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:30px 32px; } }
   .ways .pilar img{ aspect-ratio:1/1; }
-  @media (min-width:768px){ .ways .pilar img{ aspect-ratio:auto; height:clamp(240px, calc(100vh - 548px), 520px); } }
+  @media (min-width:768px){ .ways .pilar img{ aspect-ratio:auto; height:clamp(240px, calc(100vh - 500px), 620px); } }
   .ways .pilar:nth-child(1) img,
   .ways .pilar:nth-child(2) img{ object-position:center 75%; }
   .ways .pilar{ height:100%; }
   .ways .pilar .t{ font-family:var(--display); font-weight:400; font-size:20px; letter-spacing:.01em; margin-top:16px; }
-  .ways .pilar .p{ margin-top:8px; font-size:12.5px; line-height:1.65; color:var(--muted); max-width:34ch; }
+  .ways .pilar .p{ margin-top:8px; font-size:12.5px; line-height:1.65; color:var(--muted); max-width:none; }
   .ways .pilar .arrow{ margin-top:auto; padding-top:16px; }
 
   /* ---------- footer ---------- */
