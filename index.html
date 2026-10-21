@@ -48,6 +48,8 @@
   @media (min-width:1024px){ .wrap{ padding-inline:64px; } }
   .sec{ padding-block:36px; }
   @media (min-width:768px){ .sec{ padding-block:56px; } }
+  .heroC + .sec{ padding-top:16px; }
+  @media (min-width:768px){ .heroC + .sec{ padding-top:20px; } }
 
   /* ---------- type ---------- */
   .eyebrow{
@@ -419,11 +421,12 @@
   @media (min-width:768px){ .bcorp-band .bcorp{ height:108px; } }
 
   /* ---------- dónde comprar: hero + tarjetas ---------- */
-  .heroC{ display:flex; flex-direction:column; align-items:flex-start; gap:18px; padding-block:48px 8px; max-width:62ch; }
-  @media (min-width:768px){ .heroC{ padding-block:64px 10px; gap:20px; } }
+  .heroC{ display:flex; flex-direction:column; align-items:flex-start; gap:14px; padding-block:34px 6px; max-width:62ch; }
+  @media (min-width:768px){ .heroC{ padding-block:40px 6px; gap:16px; } }
   .heroC .lead{ max-width:56ch; }
-  .ways{ display:grid; grid-template-columns:minmax(0,1fr); gap:38px 22px; margin-top:34px; }
-  @media (min-width:768px){ .ways{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px 32px; } }
+  .ways{ display:grid; grid-template-columns:minmax(0,1fr); gap:28px 22px; margin-top:22px; }
+  @media (min-width:768px){ .ways{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:30px 32px; } }
+  .ways .pilar img{ aspect-ratio:1/1; }
   .ways .pilar{ height:100%; }
   .ways .pilar .t{ font-family:var(--display); font-weight:400; font-size:20px; letter-spacing:.01em; margin-top:16px; }
   .ways .pilar .p{ margin-top:8px; font-size:12.5px; line-height:1.65; color:var(--muted); max-width:34ch; }
@@ -823,9 +826,9 @@
 
   <section class="invita">
     <div class="wrap invita-inner">
-      <p class="eyebrow">¿Eres tienda o distribuidor?</p>
-      <h2 class="invita-h">¿Te gustaría comercializar Rols?</h2>
-      <p class="invita-p">Si quieres sumar nuestras colecciones de alfombras a medida y moquetas a tu tienda, hablamos cuando quieras.</p>
+      <p class="eyebrow">¿Tienda, distribuidor o interiorista?</p>
+      <h2 class="invita-h">¿Te gustaría trabajar con Rols?</h2>
+      <p class="invita-p">Si eres tienda, distribuidor o interiorista y quieres sumar nuestras colecciones de alfombras a medida y moquetas a tus proyectos, hablamos cuando quieras.</p>
       <a class="arrow" href="https://www.rolscarpets.com/contacto/">Contacta con nosotros <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></svg></a>
     </div>
   </section>
